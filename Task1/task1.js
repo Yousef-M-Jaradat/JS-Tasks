@@ -120,3 +120,9 @@ Sample Output : -4,-3,1,2,3,5,6,7,8
 var arr1 = [ -3, 8, 7, 6, 5, -4, 3, 2, 1 ];
 console.log(arr1.sort(Number));
 console.log(arr1.sort());
+var arr2 = arr1.sort()
+console.log(arr2);
+
+arr1[0] = arr1.splice(1, 1, arr1[0])[0];
+console.log(arr1);
+
