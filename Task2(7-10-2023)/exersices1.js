@@ -6,9 +6,9 @@ console.log("******************* Task1 Question1******************");
 let x1 = -5;
 let y1 = 10;
 if( x1 > y1){
-    console.log(x1);
+    console.log(`The numbers are ${x1} and ${y1} The larger is ${x1}`);
 }else {
-    console.log(y1);
+    console.log(`The numbers are ${x1} and ${y1} The larger is ${y1}`);
 }
 
 
