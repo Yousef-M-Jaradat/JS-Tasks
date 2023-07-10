@@ -8,23 +8,23 @@ equal or between 90 and 100 ===> A
 */
 console.log("******************* Task2 Question1******************");
 
-let rate,x;
+let rate,x2_1;
 rate = 99;
 if (rate < 50 ){
-    x = 0;
+    x2_1 = 0;
 }else if (rate >= 50 && rate <= 59){
-    x = 1;
+    x2_1 = 1;
 }else if (rate >= 60 && rate <= 69){
-    x = 2 ;
+    x2_1 = 2 ;
 }else if (rate >= 70 && rate <= 79){
-    x = 3;
+    x2_1 = 3;
 }else if (rate >= 80 && rate <= 89){
-    x = 4;
+    x2_1 = 4;
 }else if (rate >= 90 && rate <= 100){
-    x = 5;
+    x2_1 = 5;
 }
 
-switch(rate){
+switch(x2_1){
     case 0 : console.log("Fail");
     break;
     case 1 : console.log("E");
