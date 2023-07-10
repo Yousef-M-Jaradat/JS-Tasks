@@ -24,7 +24,11 @@ console.log("******************* Task1 Question2******************");
 
 let arr2=[3, -7, 2];
 if (arr2[0] < 0){
-    console.log(``);
+    console.log(`The negatvie Number is ${arr2[0]} and the sign is -`);
+}else if (arr2[1] < 0){
+    console.log(`The negatvie Number is ${arr2[1]} and the sign is -`);
+}else if (arr2[2] < 0){
+    console.log(`The negatvie Number is ${arr2[2]} and the sign is -`);
 }
 
  /******* End Your Code ********* */

@@ -27,13 +27,15 @@ for(let i = 0; i < arr.length; i++){
    1 2 3 4 5 6 
    1 2 3 4 5 6 7 
    1 2 3 4 5 6 7 8 
-
 */
+console.log("******************* Task3 Question3******************");
+
+
 /* 
 Check if a string contains the letter “y”. Print “yes” if it does and “no” if it does not.
 let x = "don’t know why"
 */
-console.log("******************* Task3 Question2******************");
+console.log("******************* Task3 Question4******************");
 let x3_4 = "don’t know why";
 if (x3_4.includes("y")){
    console.log("Yes");
