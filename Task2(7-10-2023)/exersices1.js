@@ -41,6 +41,16 @@ let z3 = 4;
 
 if( x3 > y3 && x3 > z3 && y3 > z3){
     console.log(x3,y3,z3);
+}else if( x3 > y3 && x3 > z3 && z3 > y3){
+    console.log(x3,z3,y3);
+}else if( y3 > x3 && y3 > z3 && x3 > z3){
+    console.log(y3,x3,z3);
+}else if( y3 > x3 && y3 > z3 && z3 > y3){
+    console.log(y3,z3,x3);
+}else if( z3 > x3 && z3 > y3 && x3 > y3){
+    console.log(z3,x3,y3);
+}else{
+    console.log(z3,y2,x3);
 }
  /******* End Your Code ********* */
 
@@ -51,7 +61,22 @@ Sample numbers : -5, -2, -6, 0, -1
 Output : 0 */
 
 /******* Start Your Code *********/
-  
+console.log("******************* Task1 Question1******************");
+
+let a4 = -5 ,b4 = -2 ,c4 = -6 ,d4 = 0 ,e4 =-1 ;
+
+if(a4 > b4 && a4 > c4 && a4 > d4 && a4 > e4){
+    console.log(a4);
+}else if(b4 > a4 && b4 > c4 && b4 > d4 && b4 > e4){
+    console.log(b4);
+}else if(c4 > a4 && c4 > b4 && c4 > d4 && c4 > e4){
+    console.log(c4);
+}else if(d4 > a4 && d4 > b4 && d4 > c4 && d4 > e4){
+    console.log(d4);
+}else{
+    console.log(e4)
+}
+
  /******* End Your Code ********* */
 
  /* 5.Write the if statement to display "Hello World" if x is greater than y, otherwise alert "Goodbye".*/
