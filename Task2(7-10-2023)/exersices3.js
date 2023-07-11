@@ -30,9 +30,15 @@ for(let i = 0; i < arr.length; i++){
 */
 console.log("******************* Task3 Question3******************");
 
-for(let i = 1; i < 9 ; i++){
-   console.log('1'+i);
+let n = 8; 
+let string = "";
+for (let i = 1; i <= n; i++) {
+  for (let j = 1; j <= i; j++) {
+    string += j;
+  }
+  string += "\n";
 }
+console.log(string);
 /* 
 Check if a string contains the letter “y”. Print “yes” if it does and “no” if it does not.
 let x = "don’t know why"
