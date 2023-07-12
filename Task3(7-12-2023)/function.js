@@ -80,18 +80,19 @@ greet ("Yousef");
 /*
 5
 what is the error:
-function double(cat) {
+*/
+function double4(cat) {
+  return 2 * cat;
+}
+
+function double5(x) {
   return 2 * x;
 }
 
-function double(7) {
-  return 2 * 7;
-}
-
-function double('7') {
+function double6(string) {
   return 2 * 'x';
 }
-*/
+
 console.log("******************Question 5******************");
 
 
@@ -237,7 +238,6 @@ function largerNubmer( x, y){
 
 largerNubmer(5,6)
 largerNubmer(5,3)
-
 /*
 12
 Write a function called smallerNubmer
@@ -294,17 +294,34 @@ Ex: shorterString("air","by","car","school","github")
 => by
 
 Ex: shorterString("air","tr","by","car","github")
-=> by
+=> by ==>error///////////////////////////////////////
 
 Ex: shorterString("air","tr","car","github","by")
-=> by
+=> by ==>error///////////////////////////////////////
 
 */
 console.log("******************Question 13******************");
 
-function shorterString(string1, string2, string3, string4, string5){
-  
+function shorterString(st1, st2, st3, st4, st5){
+  if (st1.length <= st2.length && st1.length <= st3.length && st1.length <= st4.length && st1.length <= st5.length){
+    console.log(st1);
+  }else if (st2.length <= st1.length && st2.length <= st3.length && st2.length <= st4.length && st2.length <= st5.length){
+    console.log(st2);
+  }else if (st3.length <= st1.length && st3.length <= st2.length && st3.length <= st4.length && st3.length <= st5.length){
+    console.log(st3);
+}else if (st4.length <= st1.length && st4.length <= st2.length && st4.length <= st3.length && st4.length <= st5.length){
+  console.log(st4);
+}else{
+  console.log(st5);
 }
+}
+
+shorterString("air","school","car","by","github")
+shorterString("air","tr","car","by","github")
+shorterString("by","tr","car","air","github")
+shorterString("air","by","car","school","github")
+shorterString("air","tr","by","car","github")
+shorterString("air","tr","car","github","by")
 
 /*
 14
@@ -322,7 +339,19 @@ try all the cases (change the order of the longestString)
 */
 console.log("******************Question 14******************");
 
-
+function longerString(st1 ,st2 ,st3 ,st4) {
+  if (st1.length >= st2.length && st1.length >= st3.length && st1.length >= st4.length){
+    console.log(st1);
+  }else if (st2.length >= st1.length && st2.length >= st3.length && st2.length >= st4.length){
+    console.log(st2);
+  }else if (st3.length >= st1.length && st3.length >= st2.length && st3.length >= st4.length){
+    console.log(st3);
+}else{
+  console.log(st4);
+}
+}
+longerString("air","school","car","github")
+longerString("air","schoo","car","github")
 
 /*
 15
@@ -339,6 +368,16 @@ Ex: isEven(2)
 */
 console.log("******************Question 15******************");
 
+function isEven(x){
+  if(x % 2 == 0){
+    console.log(true);
+  }else{
+    console.log(false);
+  }
+}
+
+isEven(1)
+isEven(2)
 
 
 /*
@@ -357,6 +396,17 @@ Ex: isOdd(5)
 
 console.log("******************Question 16******************");
 
+function isOdd(x){
+  if(x % 2 == 0){
+    console.log(false);
+  }else{
+    console.log(true);
+  }
+}
+
+isOdd(4)
+isOdd(5)
+
 
 /*
 17
@@ -372,7 +422,16 @@ Ex: positive(-5)
 */
 console.log("******************Question 17******************");
 
+function positive(x){
+  if(x > 0){
+    console.log(x);
+  }else{
+    console.log(-1 * x);
+  }
+}
 
+positive(4)
+positive(-5)
 
 /*
 18
@@ -388,7 +447,13 @@ Ex: fullName("Alex", "Mercer")
 */
 console.log("******************Question 18******************");
 
+function fullName(firstName, lastName){
+  let fullName = firstName + " " + lastName;
+  console.log(fullName);
+}
 
+fullName("Adam","McCallen")
+fullName("Alex", "Mercer")
 
 /*
 19
@@ -405,7 +470,13 @@ Ex: average(5,7,9,3,5)
 */
 console.log("******************Question 19******************");
 
+function average(a ,b ,c ,d ,e){
+  let avg = (a+b+c+d+e)/5
+  console.log(avg);
+}
 
+average(1,2,3,4,5)
+average(5,7,9,3,5)
 
 /*
 20
@@ -423,6 +494,9 @@ Ex: randomNumber()
 */
 console.log("******************Question 20******************");
 
+function randomNumber(){
+
+}
 
 /*
 21
