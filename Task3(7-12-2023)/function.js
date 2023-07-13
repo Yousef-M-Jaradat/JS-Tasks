@@ -495,8 +495,10 @@ Ex: randomNumber()
 console.log("******************Question 20******************");
 
 function randomNumber(){
-
+  let x = Math.random()
+  console.log(x);
 }
+randomNumber()
 
 /*
 21
@@ -514,6 +516,12 @@ Ex: randomBetweenNumbers(3,100)
 */
 console.log("******************Question 21******************");
 
+function randomBetweenNumbers(x ,y){
+  let z = Math.floor(Math.random() * (y - x)) + x;
+  console.log(z);
+}
+
+randomBetweenNumbers(1,7)
 
 
 /*
@@ -538,6 +546,23 @@ Ex: scoreInUniversty(71)
 */
 console.log("******************Question 22******************");
 
+function scoreInUniversty(average){
+  if (average >= 95 && average <= 100){
+    console.log("A");
+  }else if (average >= 85 && average <= 94){
+    console.log("B");
+}else if (average >= 70 && average <= 84){
+  console.log("C");
+}else if (average >= 50 && average <= 69){
+  console.log("D");
+}else if (average >= 0 && average <= 49){
+  console.log("F");
+}else {
+  console.log("Check Your Average again");
+}
+}
+
+scoreInUniversty(10)
 
 /*
 23
@@ -558,6 +583,11 @@ Ex: counter()
 */
 console.log("******************Question 23******************");
 
+
+async function counter() {
+  console.count()
+}
+counter()
 
 /*
 24
