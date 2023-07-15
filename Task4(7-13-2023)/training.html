@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title style="font-family: Georgia, 'Times New Roman', Times, serif;">Document</title>
+</head>
+<body>
+    <!-- <input type="number" placeholder="USD" id="dollar">
+    <input type="number" placeholder="JD" id="denar"> -->
+    <select id = "fontfamily">
+        <option id="times" >Times New Roman</option>
+        <option id="fantasy" >Fantasy</option>
+    </select>
+    <select onchange="font_weight()" id="weight" style="width: 60px;">
+        <option value="1" selected>10px</option>
+        <option value="2">15px</option>
+        <option value="3">20px</option>
+        <option value="4">25px</option>
+    </select>
+    <!-- <select id = "fontsize">
+        <option class="fontwight">10px</option>
+        <option class="fontwight">30px</option>
+    </select> -->
+    <input type="checkbox" id="italic">
+    <label for="italic">Italic</label>
+    <input type="checkbox" id="bold">
+    <label for="bold">bold</label>
+    <input type="checkbox" id="underline">
+    <label for="underline">underline</label><br><br>
+    <textarea id="text" rows="10" cols="50">the quick brown fox over the lazy dog</textarea>
+    <script src="training.js"></script>
+</body>
+</html>
+<select onchange="font_weight()" id="weight" style="width: 60px;">
+    <option value="1" selected>10px</option>
+    <option value="2">15px</option>
+    <option value="3">20px</option>
+    <option value="4">25px</option>
+</select>

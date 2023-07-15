@@ -582,11 +582,14 @@ Ex: counter()
 
 */
 console.log("******************Question 23******************");
+let Counter = 0
 
-
-async function counter() {
-  console.count()
+ function counter() {
+  Counter++;
+  console.log(Counter);
 }
+counter()
+counter()
 counter()
 
 /*
@@ -621,3 +624,20 @@ Ex: counter()
 => 1
 */
 console.log("******************Question 24******************");
+function resetcounter() {
+  console.log(Counter);
+  console.log(`Counter reset`);
+  Counter=0;
+}
+resetcounter()
+counter()
+counter()
+counter()
+
+// const yousef = {
+//   hair:"black",
+//   eyes:"green",
+//   walk:function name(params) {
+    
+//   }
+// }
