@@ -20,29 +20,15 @@ fontfamily.onchange = () => {
 
 // *****************font-size****************
 
-// if (fontsize.value === "10px"){
-//   textarea.style.fontSize = "10px"
-// }
+if (fontsize.value === "10px"){
+  textarea.style.fontSize = "10px"
+}
 
-// fontsize.onchange = () => {
-//   if (fontsize.value === "10px"){
-//     textarea.style.fontSize = "10px"
-//   }else if (fontsize.value === "30px"){
-//     textarea.style.fontSize = "30px"
-//   }
-// }
-
-function font_weight() {
-  let weight = document.getElementById("weight");
-  let weight_value = weight.options[weight.selectedIndex].value;
-  if (weight_value == 1) {
-      text.style.fontSize = "10px";
-  } else if (weight_value == 2) {
-      text.style.fontSize = "15px";
-  } else if (weight_value == 3) {
-      text.style.fontSize = "20px";
-  } else {
-      text.style.fontSize = "25px";
+fontsize.onchange = () => {
+  if (fontsize.value === "10px"){
+    textarea.style.fontSize = "10px"
+  }else if (fontsize.value === "30px"){
+    textarea.style.fontSize = "30px"
   }
 }
 
