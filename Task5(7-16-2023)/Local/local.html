@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="card1" style=" display: none;">
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        </div>
+        <label for="name" >Name :</label>
+        <input type="text" id="name" onkeyup="names()"><br><br>
+        <label for="age" >Age :</label>
+        <input type="number" id="age" onkeyup="names()"><br><br>
+        <label for="gender" >Gender :</label>
+        <input type="text" id="gender" onkeyup="names()"><br><br>
+        <label for="date" >Birth Date :</label>
+        <input type="date" id="date" onblur="dates()"><br><br>
+        <label for="img">Your Image :</label>
+        <input type="file" id="img" onblur="imgs()"><br><br>
+        <hr><br>
+        <div id="card2" style=" display: none;">
+            <p></p>
+            <p></p>
+            <p></p>
+        </div>
+        <label for="desc">Description :</label>
+        <input type="text" id="desc" onkeyup="names()"><br><br>
+        <label for="major">Major & University :</label>
+        <input type="text" id="major" onkeyup="names()"><br><br>
+        <label for="lang">Programming Language :</label>
+        <input type="checkbox" id="html">
+        <label for="html">HTML</label>
+        <input type="checkbox" id="CSS">
+        <label for="CSS">CSS</label>
+        <input type="checkbox" id="JS">
+        <label for="JS">JS</label><br><br>
+        <hr><br>
+        <div id="card3" style=" display: none;">
+            <p></p>
+            <p></p>
+        </div>
+        <label for="sibling">Sibling Numbers :</label><br>
+        <input type="number" id="sibling" onkeyup="names()"><br>
+        <label for="dessibling">Description of Sibling :</label><br>
+        <input type="text" id="dessibling" onkeyup="names()"><br><br>
+        <button id="submit" onclick="cards()">Submit</button>
+
+        <script src="local.js"></script>
+</body>
+</html>
