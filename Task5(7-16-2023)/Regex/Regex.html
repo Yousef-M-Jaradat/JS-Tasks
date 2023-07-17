@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        span{color: red;}
+    </style>
 </head>
 <body>
     <label for="Fname">Enter a Fname:</label><br>
@@ -13,9 +16,9 @@
     <label for="Bdate">Enter a Bdate:</label><br>
     <input type="text" id="Bdate" onchange="error2()"><span></span><br>
     <label for="Email">Enter an Email:</label><br>
-    <input type="email" id="Email"><span></span><br>
+    <input type="email" id="Email" onkeyup="error3()"><span></span><br>
     <label for="Cemail">Confirm Email:</label><br>
-    <input type="email" id="Cemail"><span></span><br>
+    <input type="email" id="Cemail" onkeyup="error4()"><span></span><br>
     <label for="Pass">Password:</label><br>
     <input type="password" id="Pass"><span></span><br>
     <label for="Cpass">Confirm Password:</label><br>

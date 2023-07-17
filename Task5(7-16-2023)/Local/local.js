@@ -17,8 +17,11 @@ function names(){
 function dates(){
     let date = document.getElementById("date").value;
     localStorage.Date = date;
+
+}
+function imgs() {
     let img = document.getElementById("img").value;
-    localStorage.Img = img; 
+    localStorage.Img = img;
 }
 function cards() {
     let card1 = document.getElementById("card1");
