@@ -1,39 +1,39 @@
-{
-    "person1":{
+[
+    {
         "name": "John",
         "age": 23,
         "major": "engineer",
         "university": "yarmouk",
-        "image": "/Capture.PNG"
+        "image": "Capture.PNG"
     },
-    "person2":{
+    {
         "name": "John",
         "age": 23,
         "major": "engineer",
         "university": "yarmouk",
-        "image": "/Capture.PNG"
+        "image": "Capture.PNG"
     },
-    "person3":{
+    {
         "name": "John",
         "age": 23,
         "major": "engineer",
         "university": "yarmouk",
-        "image": "/Capture.PNG"
+        "image": "Capture.PNG"
     },
-    "person4":{
+    {
         "name": "John",
         "age": 23,
         "major": "engineer",
         "university": "yarmouk",
-        "image": "/Capture.PNG"
+        "image": "Capture.PNG"
     },
-    "person5":{
+    {
         "name": "John",
         "age": 23,
         "major": "engineer",
         "university": "yarmouk",
-        "image": "/Capture.PNG"
+        "image": "Capture.PNG"
     }
-}
+]
 
 
