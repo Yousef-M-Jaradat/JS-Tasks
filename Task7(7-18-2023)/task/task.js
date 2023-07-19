@@ -1,26 +1,39 @@
-async function odjData(){
+async function Data() {
     try {
-        const response = await fetch('https://api.zippopotam.us/us/33162');
-        const data = JSON.parse(response);
-        console.log(data);
+      const response = await fetch('https://fakestoreapi.com/products');
+      const mydata = await response.json();
+      console.log(mydata);
+      
+      function getdata(){
 
-        function getdata(){
-            let trtable = document.createElement('tr');
-            table.appendChild(trtable);
-            for (const key in tableobj[i]) {
-                if (key === "image"){
-                    let tdtable = document.createElement("td");
-                    tdtable.innerHTML = `<img style="width: 100px; height: 100px;" src="${tableobj[i][`${key}`]}">`;  
-                    trtable.appendChild(tdtable);              
-                }else{
-                let tdtable = document.createElement("td");
-                tdtable.innerHTML = tableobj[i][`${key}`];
-                trtable.appendChild(tdtable);
-            }
-        }
-            }
-    }
-    catch (error){
-        console.error('An error occurred');
+        let t =document.getElementById("table")
+        for (let i=0 ; i<mydata.length ; i++){
+        let tr =document.createElement("tr")
+        t.appendChild(tr)
+        let td1 =document.createElement("td")
+        tr.appendChild(td1)
+        td1 .textContent = mydata[i].id
+        let td2 =document.createElement("td")
+        tr.appendChild(td2)
+        td2 .textContent = mydata[i].category
+        let td3 =document.createElement("td")
+        tr.appendChild(td3)
+        td3 .textContent = mydata[i].description
+        let td4 =document.createElement("td")
+        tr.appendChild(td4)
+        td4 .textContent = mydata[i].price
+        let td5 =document.createElement("td")
+        tr.appendChild(td5)
+        let im =document.createElement("img")
+        im.src = mydata[i].image
+        td5.appendChild(im)
+        im.style= "width:100px"
+
     }
 }
+getdata()
+    } 
+    catch (error) {
+      console.error('An error occurred');
+    }
+    }
