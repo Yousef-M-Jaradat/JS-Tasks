@@ -56,6 +56,32 @@ if( x3 > y3 && x3 > z3 && y3 > z3){
 }else{
     console.log(z3,y2,x3);
 }
+
+
+function sort(x,y,z){
+    if(x > y && x > z){
+        if(y > z){
+            console.log(x,y,z);
+        }else{
+            console.log(x,z,y);
+        }
+    }
+    if(y > x && y > z){
+        if(x > z){
+            console.log(y,x,z);
+        }else{
+            console.log(y,z,x);
+        }
+    }
+    if(z > x && z > y){
+        if(x > y){
+            console.log(z,x,y);
+        }else{
+            console.log(z,y,x);
+        }
+    }
+}
+sort(4,0,-1)
  /******* End Your Code ********* */
 
 

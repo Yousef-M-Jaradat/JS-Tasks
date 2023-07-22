@@ -32,6 +32,7 @@ console.log("******************* Task3 Question3******************");
 
 let rows = 8 ;
 let input = ""
+let p="";
 for(i = 1; i <=rows; i++) {
    for(let j = 1; j <=i; j++) {
       input += j
@@ -39,6 +40,11 @@ for(i = 1; i <=rows; i++) {
    input +="\n"
 }
 console.log(input);
+
+for(i = 1; i <=rows; i++) {
+   p += i
+   console.log(p);
+}
 
 /* 
 Check if a string contains the letter “y”. Print “yes” if it does and “no” if it does not.

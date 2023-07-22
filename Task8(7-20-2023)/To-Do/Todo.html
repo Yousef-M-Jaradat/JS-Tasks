@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* body{
+            background-color: antiquewhite;
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            width: 400px; min-height: 500px;
+            background-color: white;
+            position: absolute;
+            left: 35%;
+        }
+        h1{
+            text-align: center;
+        }
+        button{
+            color: white;
+            background-color: blue;
+            height: 25px;
+            border: none;
+        }
+        input{
+            height: 20px;
+            margin: 10px;
+        }
+        #input1{
+            width: 300px;
+        }   
+        .taskp{
+            margin: 10px 20px;
+            display: grid;
+            grid-template-columns: 1fr auto auto;
+            justify-content: start;
+            column-gap: 30px;
+        }
+        hr{
+            width: 100%;
+            grid-column: span 3;
+        } */
+        body{
+            display: flex;
+            background-color:antiquewhite;
+            justify-content: center;
+        }
+        #container{
+            width: 400px;
+            min-height: 500px;
+            background-color: white;
+            padding-left: 10px;
+        }
+        h1{
+            text-align: center;
+        }
+        #input1{
+            width: 340px;
+            height: 25px;
+            margin-bottom: 10px;
+        }
+        #input2{
+            width: 200px;
+            height: 25px;
+        }
+        button{
+            background-color: blue;
+            color:white;
+            height: 28px;
+            border: none;
+        }
+        p{
+            margin: 10px 20px;
+            display: grid;
+            grid-template-columns: 1fr auto auto;
+            column-gap: 30px;
+        }
+        hr{
+            grid-column: span 3;
+            width: 100%;
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- <div id="container">
+        <h1>To-Do List</h1>
+        <input type="text" placeholder="Enter task description" id="input1">
+        <button onclick="insert()">Add</button><br>
+        <input type="text" placeholder="Search tasks" id="input2">
+    </div> -->
+
+    <div id="container">
+        <h1>To-Do List</h1>
+        <input type="text" placeholder="Enter task description" id="input1">
+        <button id="add" onclick="insert()">Add</button><br>
+        <input type="text" placeholder="Search tasks" id="input2">
+        
+    </div>
+    <script src="Todo.js"></script>
+</body>
+</html>

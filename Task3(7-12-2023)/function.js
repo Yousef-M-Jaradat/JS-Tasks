@@ -260,20 +260,44 @@ Ex: smallerNubmer(5,3,3)
 console.log("******************Question 12******************");
 
 
-function smallerNubmer( x , y , z){
-  if(x <= y  && x <= z){
-    console.log(x);
-}else if (y <= x && y <= x){
-  console.log(y);
-}else{
-  console.log(z);
-}
-}
 
-smallerNubmer(8,6,7)
-smallerNubmer(5,99,34)
-smallerNubmer(5,99,3)
-smallerNubmer(5,3,3)
+
+
+
+
+function small(x,y,z){
+  if(x <= y && x <= z){
+    console.log(`the smallest x  ${x}`);
+  }else if (y <= x && y <= z){
+    console.log(`the smallest y ${y}`);
+  }else{
+    console.log(`the smallest z  ${z}`);
+  }
+}
+small(1,-5,-5)
+
+
+
+
+
+
+// function smallerNubmer( x , y , z){
+//   if(x <= y  && x <= z){
+//     console.log(x);
+// }else if (y <= x && y <= x){
+//   console.log(y);
+// }else{
+//   console.log(z);
+// }
+// }
+
+// smallerNubmer(8,6,7)
+// smallerNubmer(5,99,34)
+// smallerNubmer(5,99,3)
+// smallerNubmer(5,3,3)
+
+
+
 
 /*
 13
@@ -302,26 +326,25 @@ Ex: shorterString("air","tr","car","github","by")
 */
 console.log("******************Question 13******************");
 
-function shorterString(st1, st2, st3, st4, st5){
-  if (st1.length <= st2.length && st1.length <= st3.length && st1.length <= st4.length && st1.length <= st5.length){
-    console.log(st1);
-  }else if (st2.length <= st1.length && st2.length <= st3.length && st2.length <= st4.length && st2.length <= st5.length){
-    console.log(st2);
-  }else if (st3.length <= st1.length && st3.length <= st2.length && st3.length <= st4.length && st3.length <= st5.length){
-    console.log(st3);
-}else if (st4.length <= st1.length && st4.length <= st2.length && st4.length <= st3.length && st4.length <= st5.length){
-  console.log(st4);
-}else{
-  console.log(st5);
-}
+function shorter(a,b,c,d,e){
+  let array = [a,b,c,d,e];
+  let theShorter = array[0];
+  for(let i = 0; i < array.length; i++){
+    if(array[i].length < theShorter.length){
+      theShorter = array[i];
+    }
+  }
+  console.log(theShorter);
 }
 
-shorterString("air","school","car","by","github")
-shorterString("air","tr","car","by","github")
-shorterString("by","tr","car","air","github")
-shorterString("air","by","car","school","github")
-shorterString("air","tr","by","car","github")
-shorterString("air","tr","car","github","by")
+shorter("air","school","car","by","github")
+shorter("air","tr","car","by","github")
+shorter("by","tr","car","air","github")
+shorter("air","by","car","school","github")
+shorter("air","tr","by","car","github")
+shorter("air","tr","car","github","by")
+
+
 
 /*
 14
@@ -339,19 +362,18 @@ try all the cases (change the order of the longestString)
 */
 console.log("******************Question 14******************");
 
-function longerString(st1 ,st2 ,st3 ,st4) {
-  if (st1.length >= st2.length && st1.length >= st3.length && st1.length >= st4.length){
-    console.log(st1);
-  }else if (st2.length >= st1.length && st2.length >= st3.length && st2.length >= st4.length){
-    console.log(st2);
-  }else if (st3.length >= st1.length && st3.length >= st2.length && st3.length >= st4.length){
-    console.log(st3);
-}else{
-  console.log(st4);
+function longer(a,b,c,d,e){
+  let array = [a,b,c,d,e];
+  let thelongest = array[0];
+  for(let i = 0; i < array.length; i++){
+    if(array[i].length > thelongest.length){
+      thelongest = array[i];
+    }
+  }
+  console.log(thelongest);
 }
-}
-longerString("air","school","car","github")
-longerString("air","schoo","car","github")
+longer("air","school","car","github","dsfdsfsdfs")
+longer("air","schoo","car","github","ssssss")
 
 /*
 15
@@ -369,7 +391,7 @@ Ex: isEven(2)
 console.log("******************Question 15******************");
 
 function isEven(x){
-  if(x % 2 == 0){
+  if(x % 4 == 0){
     console.log(true);
   }else{
     console.log(false);
@@ -591,6 +613,8 @@ let Counter = 0
 counter()
 counter()
 counter()
+counter()
+
 
 /*
 24
